@@ -10,7 +10,7 @@
 *     \______/  \______/ |_______//$$$$$$|__/   |__/      
 *                                |______/                 
 *
-*	@Filename: ocd_functions.sqf
+*	@Filename: fn_init.sqf
 *	@Location: {ocd_core}\functions\
 *	@Author: Nixon {nixon@visualized.se}
 *

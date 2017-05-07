@@ -39,3 +39,19 @@ class CfgPatches {
 		requiredAddons[] = {};
 	};
 };
+
+class CfgFunctions {
+	class OCD {
+		class core_functions {
+
+			file = "functions"; // @mod/addons/ocd_core/-> function <-/fn_reInit.sqf
+
+			class init {
+				postInit = 1; // 1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit", didJIP]
+			};
+			class reInit {};
+			class send {};
+		};
+	};
+};
+// call OCD_fnc_send;
