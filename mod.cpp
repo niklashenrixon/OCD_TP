@@ -1,4 +1,4 @@
-version		= "1.0";
+version     = "1.0";
 name        = "OCD Transport Protocol";
 author      = "Nixon";
 picture     = "logo.paa";
@@ -9,4 +9,3 @@ action      = "http://github.com/niklashenrixon/OCD_TP";
 tooltip     = "OCD Transport Protocol";
 overview    = "OCD Transport Protocol";
 description = "OCD Transport Protocol";
-tooltip		= "OCD Transport Protocol";
