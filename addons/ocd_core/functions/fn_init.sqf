@@ -20,18 +20,18 @@ private ['_managerID', '_isPlayerHost'];
 
 if (!isDedicated && isServer) then { _isPlayerHost = TRUE; };
 
-/*	Only executed on player hosted games */
+/* Only executed on player hosted games */
 if (_isPlayerHost) then {
 	_managerID = owner player;
 	ocd_endpoints = [_managerID, getPlayerUID(player)];
 };
 
-/*	Only executed on dedicated servers */
+/* Only executed on dedicated servers */
 if (isDedicated) then {
 	ocd_endpoints = [];
 };
 
-/*	Executed on both server types */
+/* Executed on both server types */
 if (isServer) then {
 
 };
