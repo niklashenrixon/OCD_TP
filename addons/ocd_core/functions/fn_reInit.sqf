@@ -15,3 +15,19 @@
 *	@Author: Nixon {nixon@visualized.se}
 *
 */ //////////////////////////////////////////////////////////////////
+
+try {
+    //block, that can throw exception
+    if (_name == "") then {
+        throw "no name"
+    } else {
+
+    }
+}
+
+catch {
+    //block, that processes an exception
+    if (_exception == "no name") then {
+
+    }
+};

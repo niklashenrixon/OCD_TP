@@ -26,4 +26,4 @@ actionName  = "Website";
 action      = "http://github.com/niklashenrixon/OCD_TP";
 tooltip     = "OCD Transport Protocol";
 overview    = "OCD Transport Protocol";
-description = "OCD Transport Protocol"; 
+description = "OCD Transport Protocol";

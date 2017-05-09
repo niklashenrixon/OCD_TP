@@ -34,8 +34,8 @@ class CfgPatches {
 		name             = "OCD Transport Protocol";
 		author           = "Nixon";
 		authorUrl        = "http://github.com/niklashenrixon/OCD_TP";
-		version          = "1.0";
-		requiredVersion  = 1.0;
+		version          = "0.1";
+		requiredVersion  = 0.1;
 		requiredAddons[] = {};
 	};
 };
