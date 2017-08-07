@@ -16,34 +16,24 @@
 *
 */ //////////////////////////////////////////////////////////////////
 
-class CfgMods {
-	class OCD_CORE {
-		dir         = "@OCD_TP";
-		picture     = "\ocd_core\logo.paa";
-		name        = "OCD Transport Protocol";
-		author      = "Nixon";
-		hidePicture = 0;
-		hideName    = 0;
-		version     = "1.0";
-	};
-	author = "Nixon";
-};
+#define true 1
+#define false 0
 
 class CfgPatches {
-	class OCD_CORE {
+	class ocd_core {
 		name             = "OCD Transport Protocol";
 		author           = "Nixon";
 		authorUrl        = "http://github.com/niklashenrixon/OCD_TP";
-		version          = "0.1";
+		fileName 		 = "ocd_core.pbo";
 		requiredVersion  = 0.1;
-		requiredAddons[] = {};
+		requiredAddons[] = {}; // Defined as "mod1", "mod2" (array)
 	};
 };
 
 class CfgFunctions {
 	class OCD {
 		class core_functions {
-			file = "functions"; // @mod/addons/ocd_core/-> function <-/fn_reInit.sqf
+			file = "\ocd_core\functions"; // @mod/addons/ocd_core/-> folder name <-/fn_reInit.sqf
 			class init {
 				postInit = 1; // 1 to call the function upon mission start, after objects are initialized. Passed arguments are ["postInit", didJIP]
 			};

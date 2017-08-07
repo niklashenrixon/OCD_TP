@@ -16,14 +16,19 @@
 *
 */ //////////////////////////////////////////////////////////////////
 
-version     = "1.0";
-name        = "OCD Transport Protocol";
-author      = "Nixon";
-picture     = "logo.paa";
-logo        = "logo.paa";
-logoOver    = "logo.paa";
-actionName  = "Website";
-action      = "http://github.com/niklashenrixon/OCD_TP";
-tooltip     = "OCD Transport Protocol";
-overview    = "OCD Transport Protocol";
-description = "OCD Transport Protocol";
+name             = "OCD Transport Protocol";
+description      = "OCD Transport Protocol";
+version          = "1.0";
+author           = "Nixon";
+picture          = "\ocd_core\logo.paa";
+logo             = "\ocd_core\logo.paa";
+logoOver         = "\ocd_core\logo.paa";
+logoSmall        = "\ocd_core\logo.paa";
+actionName       = "ActionName";
+action           = "http://github.com/niklashenrixon/OCD_TP";
+tooltip          = "Tooltip";
+tooltipOwned     = "Tooltip Owned";
+overview         = "Overview";
+overviewPicture  = "\ocd_core\logo.paa";
+overviewText     = "Overview Text";
+overviewFootnote = "Overview Footnote";
