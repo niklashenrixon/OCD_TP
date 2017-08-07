@@ -24,7 +24,7 @@ class CfgPatches {
 		name             = "OCD Transport Protocol";
 		author           = "Nixon";
 		authorUrl        = "http://github.com/niklashenrixon/OCD_TP";
-		fileName 		 = "ocd_core.pbo";
+		fileName         = "ocd_core.pbo";
 		requiredVersion  = 0.1;
 		requiredAddons[] = {}; // Defined as "mod1", "mod2" (array)
 	};
