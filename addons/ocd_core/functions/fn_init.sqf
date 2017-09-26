@@ -36,4 +36,4 @@ if (isServer) then {
 
 };
 
-["- OCD_TP, T (%1): Post initialization complete", time] call BIS_fnc_logFormat;
+["Post initialization complete", "INFO"] call OCD_fnc_log;

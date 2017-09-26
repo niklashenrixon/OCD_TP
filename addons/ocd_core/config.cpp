@@ -39,7 +39,7 @@ class CfgFunctions {
 			};
 			class reInit {};
 			class send   {};
+			class log   {};
 		};
 	};
 };
-// call OCD_fnc_send;
