@@ -57,19 +57,27 @@
 *
 */ ///////////////////////////////////////////////////////////////////////////////////////
 
-params [["_data", "- OCD_TP [ERROR] : OCD_fnc_log called without data!", [[],""]],["_opt1", "ERROR", [""]]];
+params [["_data", "- OCD_TP [ERROR] : OCD_fnc_log called without data!", [[],""]],["_opt1", "ERROR", [""]] ,["_debugLevel", 0, 0] ,["_output", [], []]];
 
-switch (_opt1) do { case "ERROR": { _debugLevel = 1; }; case "WARNING": { _debugLevel = 2; }; case "INFO": { _debugLevel = 3; }; };
+switch (_opt1) do { case "ERROR": { _debugLevel = 0; }; case "WARNING": { _debugLevel = 1; }; case "INFO": { _debugLevel = 2; }; };
 
-if (OCD_debugLevel >= _debugLevel) then {
-	if ((typeName _data) == "ARRAY") then {
+if (tag_debugMode >= _debugLevel) then {
+	if (_data isEqualType []) then {
 
 		_fm = format ["- OCD_TP [%1], T (%2s) : %3", _opt1, diag_tickTime, _data select 0];
 		_data deleteAt 0; // Remove original message
-		(_data select 0) pushBack _fm; // Add new formated message
-		diag_log format _data; // Log modified array with values
+		_output pushBack _fm;
 
-	} else { diag_log _data; }; // Single message
+		for "_i" from 0 to (count _data)-1 do {
+			_sV = _data select _i;
+			_output pushBack _sV;
+		};
+
+		diag_log format _output; // Log modified array with values
+
+	} else { // Single message
+		diag_log format ["- OCD_TP [%1], T (%2s) : %3", _opt1, diag_tickTime, _data];
+	}; 
 };
 
 TRUE
